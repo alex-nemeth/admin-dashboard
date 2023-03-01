@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(66, 134, 217);
+    flex: 1;
+    color: white;
+}
+
+.options {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.toprow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.searchbar {
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px;
+}
+
+.bottomrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainpart {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.core {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    flex: 2;
+}
+
+.project {
+    border-color: black;
+    border-width: 10px;
+}
+
+.announcementsandtrending {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
