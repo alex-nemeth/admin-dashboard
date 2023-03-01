@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+* {
+    margin: 0px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -13,14 +17,35 @@ body {
 .navbar {
     display: flex;
     flex-direction: column;
-    background-color: rgb(66, 134, 217);
+    background-color: #22d3ee;
     flex: 1;
     color: white;
 }
 
+.company {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
 .options {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
 }
 
 svg {
@@ -30,18 +55,10 @@ svg {
 
 a {
     text-decoration: none;
-}
-
-.company {
-    display: flex;
-    flex-direction: row;
-}
-
-.logo {
-    height: 100px;
-    width: 100px;
-    flex-grow: 0;
-    flex-shrink: 0;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 .header {
@@ -56,20 +73,29 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
-.search {
-    width: 400px;
-    align-items: center;
-    justify-content: center;
+.searchicon {
+    width: 32px;
+    height: 32px;
     margin-left: 10px;
 }
 
 .searchbar {
-    width: 400px;
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.search {
+    width: 700px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #dcf8ff;
 }
 
 .profile {
@@ -77,6 +103,8 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
 }
 
 .pfp {
@@ -90,15 +118,50 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 30px 0px;
+}
+
+.picgreeting {
+    display: flex;
+    align-items: center;
+}
+
+.pfpbig {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.greet {
+    font-size: 24px;
+}
+
+.bigname {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 .greeting {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    background-color: #22d3ee;
+    width: 100px;
+    height: 40px;
+    margin-left: 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-width: 0px;
 }
 
 .mainpart {
-    flex: 4;
     display: flex;
     flex-direction: column;
 }
@@ -106,22 +169,39 @@ a {
 .core {
     display: grid;
     grid-template-columns: 70% 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #dcf8ff;
 }
 
 .projects {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto;
-    flex: 2;
+    margin: 20px;
 }
 
 .project {
     border-color: black;
     border-width: 10px;
+    background-color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 180px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+p {
+    padding-top: 20px;
 }
 
 .announcementsandtrending {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    margin-top: 20px;
+}
+
+.trending {
+    margin-top: 40px;
 }
